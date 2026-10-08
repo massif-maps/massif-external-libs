@@ -181,7 +181,7 @@ FT_BEGIN_HEADER
    *
    *   Define this macro if you want to enable this 'feature'.
    */
-#define FT_CONFIG_OPTION_USE_LZW
+/* #define FT_CONFIG_OPTION_USE_LZW */
 
 
   /**************************************************************************
@@ -287,7 +287,7 @@ FT_BEGIN_HEADER
    *   options set by those programs have precedence, overwriting the value
    *   here with the configured one.
    */
-#define FT_CONFIG_OPTION_USE_HARFBUZZ
+/* #define FT_CONFIG_OPTION_USE_HARFBUZZ */
 
 
   /**************************************************************************
@@ -358,7 +358,7 @@ FT_BEGIN_HEADER
    *
    *   Note that the 'FOND' resource isn't checked.
    */
-#define FT_CONFIG_OPTION_MAC_FONTS
+/* #define FT_CONFIG_OPTION_MAC_FONTS */
 
 
   /**************************************************************************
@@ -378,7 +378,7 @@ FT_BEGIN_HEADER
    *   the `FT_CONFIG_OPTION_MAC_FONTS` option.
    */
 #ifdef FT_CONFIG_OPTION_MAC_FONTS
-#define FT_CONFIG_OPTION_GUESSING_EMBEDDED_RFORK
+/* #define FT_CONFIG_OPTION_GUESSING_EMBEDDED_RFORK */
 #endif
 
 
@@ -613,7 +613,7 @@ FT_BEGIN_HEADER
    * Do not `#undef` this macro here, since the build system might define it
    * for certain configurations only.
    */
-#define TT_CONFIG_OPTION_BYTECODE_INTERPRETER
+/* #define TT_CONFIG_OPTION_BYTECODE_INTERPRETER */
 
 
   /**************************************************************************
@@ -672,7 +672,7 @@ FT_BEGIN_HEADER
    * https://www.microsoft.com/typography/cleartype/truetypecleartype.aspx
    */
 /* #define TT_CONFIG_OPTION_SUBPIXEL_HINTING  1         */
-#define TT_CONFIG_OPTION_SUBPIXEL_HINTING  2
+/* #define TT_CONFIG_OPTION_SUBPIXEL_HINTING  2 */
 /* #define TT_CONFIG_OPTION_SUBPIXEL_HINTING  ( 1 | 2 ) */
 
 
