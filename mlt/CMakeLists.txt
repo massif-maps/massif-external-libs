@@ -17,6 +17,11 @@ set(mlt_SRC_FILES
   "${MLT_ROOT}/vendor/fastpfor/fastpfor/bitpacking.cpp"
 )
 
+# rle.hpp uses std::vector without including <vector>; libc++ (emscripten) does not pull it in.
+if(NOT MSVC)
+  set_source_files_properties(${mlt_SRC_FILES} PROPERTIES COMPILE_OPTIONS "-include;vector")
+endif()
+
 set(mlt_INCLUDE_DIRS
   "${MLT_ROOT}/include"
   "${MLT_ROOT}/src"
